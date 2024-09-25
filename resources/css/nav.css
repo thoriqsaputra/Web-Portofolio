@@ -1,0 +1,84 @@
+nav {
+  position: fixed;
+  display: flex;
+  margin: 2%;
+  gap: 3.5rem;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.IconNav {
+  height: 40;
+  width: 40;
+}
+
+#sections{
+  animation: fade-down 1s ease;
+}
+
+@keyframes fade-down{
+  from{
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#skill::after {
+  position: absolute;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  margin-left: 0.5rem;
+  content: "Skills";
+  transform: translate(-100%, 30%);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+#skill:hover::after {
+  transform: translate(0, 30%);
+  opacity: 1;
+}
+
+#project::after {
+  position: absolute;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transform: translateY(30%);
+  color: white;
+  margin-left: 0.5rem;
+  content: "Projects";
+  transform: translate(-100%, 30%);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+#project:hover::after {
+  transform: translate(0, 30%);
+  opacity: 1;
+}
+
+#contact::after {
+  position: absolute;
+  text-decoration: none;
+  font-size: 1rem;
+  transform: translateY(30%);
+  font-weight: 500;
+  color: white;
+  margin-left: 0.5rem;
+  content: "Contact";
+  transform: translate(-100%, 30%);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+#contact:hover::after {
+  transform: translate(0, 30%);
+  opacity: 1;
+}

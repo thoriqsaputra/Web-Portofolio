@@ -1,0 +1,46 @@
+footer {
+  background: linear-gradient(135deg, #1a1a1a,#102d57);
+  color: #f0f0f0;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 13%;
+  margin-right: 13%;
+}
+
+#footerLogo img {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+#footerLogo img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer text description */
+#footerDesc p {
+  font-size: 14px;
+  margin: 0;
+  color: #bbbbbb;
+}
+
+/* Hover effect on the text */
+#footerDesc p:hover {
+  color: #f0f0f0;
+  transition: color 0.3s ease;
+}
+
+/* Make the text look more prominent on larger screens */
+@media (min-width: 768px) {
+  #footerDesc p {
+    font-size: 16px;
+  }
+}

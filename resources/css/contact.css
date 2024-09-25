@@ -1,0 +1,124 @@
+#contacts {
+  width: 100%;
+  background-color: #ffb1b0;
+  border-bottom: 0.5rem solid #d56d74;
+  border-top: 0.5rem solid #d56d74;
+}
+
+#mycontact {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+#mycontact::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  background-color: #e33131;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transform: translate(-10%, -25%);
+  rotate: 2deg;
+  z-index: -1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#ContactContent {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-left: 13%;
+  margin-right: 13%;
+  display: flex;
+  flex-direction: column;
+}
+
+#mycontacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5rem;
+  justify-content: start;
+  align-items: start;
+}
+
+#mycontacts img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+#feelFree {
+  color: #e33131;
+  margin-top: 0;
+}
+
+#ContactCard {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+#ContactCard:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fce3da;
+  transition: all 0.3s ease;
+}
+
+#ContactCard div {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+#ContactCard div > * {
+  margin: 0;
+  color: black;
+}
+
+#ContactCard div h3,
+#ContactCard div p {
+  text-decoration: none;
+}
+
+#ContactCard img {
+  width: 3rem;
+  height: 3rem;
+}
+
+#ContactList {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 576px) {
+  #ContactContent{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  #mycontact{
+    transform: translateX(10%);
+  }
+
+  #feelFree{
+    font-size: 1.25rem;
+  }
+
+  #mycontacts{
+    gap: 0.75rem;
+  }
+}

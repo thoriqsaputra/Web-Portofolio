@@ -1,0 +1,138 @@
+#projects {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(135deg, #49586c 0%, #102d57 100%);
+
+}
+
+#ProjectContent {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  margin-left: 13%;
+  margin-right: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#myproject {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+#myproject::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #e33131;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transform: translate(-7%, -20%);
+  rotate: -1deg;
+  z-index: -1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ProjectCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 2rem;
+  border-radius: 0.2rem;
+  background-color: #fce3da;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+
+.ProjectCard:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #fc6b39;
+}
+
+.ProjectCard img {
+  width: 35%;
+  height: 15rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.ProjectCard:hover img {
+  transform: scale(1.05);
+}
+
+.ProjectCard div {
+  width: 65%;
+  z-index: 2;
+}
+
+.ProjectCard h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.ProjectCard p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  text-align: justify;
+  transition: all 0.3s ease;
+}
+
+.ProjectCard:hover h3,
+.ProjectCard:hover p {
+  color: #ffffff;
+}
+
+#ListProject {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+  .ProjectCard{
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .ProjectCard img{
+    width: 100%;
+  }
+
+  #ProjectContent{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .ProjectCard h3{
+    font-size: 1.25rem;
+  }
+
+
+
+  .ProjectCard div{
+    width: 100%;
+  }
+}
