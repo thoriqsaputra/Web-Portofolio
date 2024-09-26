@@ -39,7 +39,7 @@
 
 #mycontacts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
   gap: 5rem;
   justify-content: start;
   align-items: start;
@@ -102,6 +102,21 @@
   gap: 1rem;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 768px){
+  #mycontacts{
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
+  #ContactCard{
+    width: 100%;
+    
+  }
+
+  #ContactCard p {
+    font-size: 0.75rem;
+  }
 }
 
 @media (max-width: 576px) {
