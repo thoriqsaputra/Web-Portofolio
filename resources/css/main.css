@@ -138,67 +138,7 @@ main {
   }
 }
 
-@media (max-width: 576px) {
-  main {
-    margin-left: 15%;
-    margin-right: 15%;
-    gap: 2rem;
-    height: fit-content;
-  }
 
-  .Lines {
-    position: absolute;
-    right: 10%;
-    top: 6%;
-    width: 9rem;
-    transform: rotate(25deg);
-  }
-
-  .Mcircle {
-    position: absolute;
-    width: 5rem;
-    transform: translateY(-22%);
-  }  
-
-  #buttonsec{
-    flex-direction: column;
-  }
-
-  #fotoAing {
-    max-width: 20rem;
-    max-height: 20rem;
-  }
-
-  #sectionDesc p{
-    font-size: 1rem;
-  }
-
-  #dash {
-    max-width: 7rem;
-    max-height: 5rem;
-  }
-
-  #Name {
-    font-size: 1.5rem;
-  }
-
-  #Name::before {
-    height: 2.5rem;
-    }
-    
-  #ViewWorkBut{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
-  #ViewWorkBut a{
-    font-size: 1rem;
-  }
-
-  #WithMeButton a {
-    font-size: 1rem;
-  }
-}
 
 #ViewWorkBut {
   padding-right: 2rem;
@@ -330,4 +270,71 @@ main {
 
 .text-md {
   font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  main {
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 2rem;
+    height: fit-content;
+  }
+
+  .Lines {
+    position: absolute;
+    right: 10%;
+    top: 6%;
+    width: 9rem;
+    transform: rotate(25deg);
+  }
+
+  .Mcircle {
+    position: absolute;
+    width: 5rem;
+    transform: translateY(-22%);
+  }  
+
+  #buttonsec{
+    flex-direction: column;
+  }
+
+  #fotoAing {
+    max-width: 20rem;
+    max-height: 20rem;
+  }
+
+  #sectionDesc p{
+    font-size: 1rem;
+  }
+
+  #dash {
+    max-width: 7rem;
+    max-height: 5rem;
+  }
+
+  #Name {
+    font-size: 1.5rem;
+  }
+
+  #Name::before {
+    height: 2.5rem;
+    }
+    
+  #ViewWorkBut{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  #WithMeButton{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  #ViewWorkBut a{
+    font-size: 1rem;
+  }
+
+  #WithMeButton a {
+    font-size: 1rem;
+  }
 }

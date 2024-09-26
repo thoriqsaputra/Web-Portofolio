@@ -7,6 +7,8 @@ nav {
   z-index: 10;
 }
 
+
+
 .IconNav {
   height: 40;
   width: 40;
@@ -14,6 +16,11 @@ nav {
 
 #sections{
   animation: fade-down 1s ease;
+}
+
+#logo {
+  height: 70px;
+  width: 70px;
 }
 
 @keyframes fade-down{
@@ -81,4 +88,15 @@ nav {
 #contact:hover::after {
   transform: translate(0, 30%);
   opacity: 1;
+}
+
+@media (max-width: 576px) {
+  nav {
+    margin: 1.5%;
+  }
+
+  #logo {
+    height: 50px;
+    width: 50px;
+  }
 }
