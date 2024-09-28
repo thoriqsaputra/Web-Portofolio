@@ -67,7 +67,9 @@
     rgba(227, 49, 49, 1) 50%,
     rgba(227, 49, 49, 0) 100%
   );
-  animation: lineExpand 0.6s ease-out forwards;
+  animation: lineExpand linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
   transform-origin: left;
 }
 
@@ -93,7 +95,9 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease,
     background-color 0.3s ease;
   opacity: 0;
-  animation: fadeInUp 1s ease forwards;
+  animation: fadeInUp linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .TechSkillCard:nth-child(1) {
@@ -178,7 +182,9 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 4rem;
-  animation: fadeInUp 1s ease;
+  animation: fadeInUp linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .setCard img {
@@ -194,11 +200,11 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(20px) scale(0.9);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
